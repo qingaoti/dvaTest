@@ -1,4 +1,3 @@
-import dva from 'dva';
 import key from 'keymaster';
 
 export default {

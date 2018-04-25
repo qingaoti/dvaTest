@@ -1,6 +1,9 @@
 import dva from 'dva';
 import './index.css';
 
+// const dva = require('dva');
+// require('./index.css');
+
 // 1. Initialize
 const app = dva({
      initialState: {
@@ -23,3 +26,7 @@ app.router(require('./router').default);
 
 // 5. Start
 app.start('#root');
+
+export default app._store;
+// module.exports = app._store;
+// module.exports = app;

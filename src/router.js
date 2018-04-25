@@ -3,6 +3,7 @@ import { Router, Route, Switch } from 'dva/router';
 import IndexPage from './routes/IndexPage';
 import Products from './routes/Products';
 import Count from './routes/Count';
+// import User from './routes/User';
 
 function RouterConfig({ history }) {
   return (
