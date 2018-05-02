@@ -28,10 +28,10 @@ class ListDemo extends React.Component {
   render() {
     return (
       <div>
-        <h1 name={this.state.name} />
         <p>
           Start editing to see some magic happen :)  {this.state.name}
           {this.props.demo.modalVisible ? "有值":"没值"}
+          <Card>我的卡片</Card>
         </p>
         <div>
           <List
