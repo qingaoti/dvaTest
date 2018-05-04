@@ -18,6 +18,10 @@ function IndexPage() {
         {/*<li><a href="#/user">go to demo CRUD 待完善 </a><code>src/routes/User/UserList</code></li>*/}
         <li><a href="#/demo/List">go to demo List 待完善 </a><code>src/routes/Demo/List</code></li>
       </ul>
+      <h4 className={styles.title}>测试模拟的接口</h4>
+      <ul className={styles.list}>
+        <li><a href="/api/users">get Users List </a></li>
+      </ul>
     </div>
   );
 }
