@@ -1,4 +1,5 @@
 var url = require('url');
+var Mock = require('mockjs');
 
 const titles = [
   'Alipay',
@@ -48,18 +49,13 @@ const desc = [
   '那时候我只会想自己想要什么，从不想自己拥有什么',
 ];
 
-const user = [
-  '付小小',
-  '曲丽丽',
-  '林东东',
-  '周星星',
-  '吴加好',
-  '朱偏右',
-  '鱼酱',
-  '乐哥',
-  '谭小仪',
-  '仲尼',
-];
+const user = num  =>  {
+  let arr = [];
+  for (let i = 0; i <num; i++) {
+    arr.push(Mock.Random.cname());
+  }
+  return arr;
+};
 
 export const getNotice = [
   {
@@ -124,6 +120,21 @@ export const getNotice = [
   },
 ];
 
+export const getUser = Mock.mock({
+  'data|3-10': [{
+    'id|+1': 1,
+    'account|5-10':"",
+    "name|+1":user(10),
+    "head_img|+1":avatars2,
+    "star|1-10": "★",
+    "age|18-50":50,
+    "online|1": true
+  }],
+  'code':200,
+  'msg':"操作成功"
+});
+
 export default {
-  getNotice
+  getNotice,
+  getUser
 };

@@ -15,8 +15,8 @@ function IndexPage() {
       <ul className={styles.list}>
         <li><a href="#/products">go to product </a><code>src/routes/Products.js</code></li>
         <li><a href="#/count">go to count </a><code>src/routes/Count.js</code></li>
-        {/*<li><a href="#/user">go to demo CRUD 待完善 </a><code>src/routes/User/UserList</code></li>*/}
-        <li><a href="#/demo/List">go to demo List 待完善 </a><code>src/routes/Demo/List</code></li>
+        <li><a href="#/user">go to demo User CRUD</a><code>src/routes/User/UserList</code></li>
+        <li><a href="#/demo/List">go to demo List </a><code>src/routes/Demo/List</code></li>
       </ul>
       <h4 className={styles.title}>测试模拟的接口</h4>
       <ul className={styles.list}>
