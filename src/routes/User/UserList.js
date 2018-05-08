@@ -32,7 +32,7 @@ const CreateForm = Form.create()((props) => {
   };
   return (
     <Modal
-      title="新建规则"
+      title="新增用户"
       visible={modalVisible}
       onOk={okHandle}
       onCancel={() => handleModalVisible()}
@@ -40,10 +40,21 @@ const CreateForm = Form.create()((props) => {
       <Form.Item
         labelCol={{ span: 5 }}
         wrapperCol={{ span: 15 }}
-        label="描述"
+        label="姓名"
       >
-        {form.getFieldDecorator('desc', {
-          rules: [{ required: true, message: 'Please input some description...' }],
+        {form.getFieldDecorator('name', {
+          rules: [{ required: true, message: 'Please input some name...' }],
+        })(
+          <Input placeholder="请输入" />
+        )}
+      </Form.Item>
+      <Form.Item
+        labelCol={{ span: 5 }}
+        wrapperCol={{ span: 15 }}
+        label="年龄"
+      >
+        {form.getFieldDecorator('age', {
+          rules: [{ required: true, message: 'Please input some age...' }],
         })(
           <Input placeholder="请输入" />
         )}
