@@ -23,6 +23,5 @@ startServer.stdout.on('data', (data) => {
   console.log(data.toString());
   if (data.toString().indexOf('Compiled successfully') >= 0 ||
     data.toString().indexOf('Compiled with warnings') >= 0) {
-
   }
 });
